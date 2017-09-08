@@ -1,0 +1,12 @@
+#include <stdio.h> 
+#include <stdlib.h> 
+int main(int argc, char *argv[]) { 
+float x; char y, z; 
+scanf ("%f", &x); z=getchar ();
+if (z== '\n') y = '\n';
+else y=getchar ();
+if (y== '\n')
+printf ("C:\n %.2f K\n %.2f F\n F:\n %.2f C\n %.2f K\n K:\n %.2f C\n %.2f F\n", x+273.15, x*1.8+32, (x-32)/1.8, 273.15+(x-32)/1.8, x-273.15, (x-273.15)*1.8+32);  
+getch(); 
+return 0; 
+}
