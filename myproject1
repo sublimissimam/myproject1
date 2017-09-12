@@ -6,7 +6,6 @@ scanf ("%f", &x); z=getchar ();
 if (z== '\n') y = '\n';
 else y=getchar ();
 if (y== '\n')
-printf ("C:\n %.2f K\n %.2f F\n F:\n %.2f C\n %.2f K\n K:\n %.2f C\n %.2f F\n", x+273.15, x*1.8+32, (x-32)/1.8, 273.15+(x-32)/1.8, x-273.15, (x-273.15)*1.8+32);  
-getch(); 
+printf ("Translation from the Celsius scale:\n %.2f K\n %.2f F\n Translation from the Fahrenheit scale:\n %.2f C\n %.2f K\n Translation from the Kelvin scale:\n %.2f C\n %.2f F\n", x+273.15, x*1.8+32, (x-32)/1.8, 273.15+(x-32)/1.8, x-273.15, (x-273.15)*1.8+32);  
 return 0; 
 }
