@@ -4,52 +4,56 @@
 int main()
 {
  float shkala, cel, fahr, kel;
- char tempr;
    printf("Vvedite lyuboe chislo\n");
-   scanf("%f", &shkala);
-   getchar();
-   char a = getchar();
+ scanf("%f", &shkala);
+ getchar();
+ char a = getchar();
  switch(a){
  case 'c':
+ 
    kel = shkala+273.15;
    fahr = shkala*1.8+32;
-   
-   printf("%.0f C \n", shkala);
-   printf("%.2f K \n", kel);
-   printf("%.2f F \n", fahr);
+     printf("%.0f C \n", shkala);
+     printf("%.2f K \n", kel);
+     printf("%.2f F \n", fahr);
    break;
  case 'k':
+ 
    cel = shkala-273.15;
    fahr = (shkala-273.15)*1.8+32;
-   printf("%.0f K \n", shkala);
-   printf("%.2f C \n", cel);
-   printf("%.2f F \n", fahr);
+     printf("%.0f K \n", shkala);
+     printf("%.2f C \n", cel);
+     printf("%.2f F \n", fahr);
    break;
  case 'f':
+ 
    cel = (shkala-32)/1.8;
    kel = 273.15+(shkala-32)/1.8;
-   printf("%.0f F \n", shkala);
-   printf("%.2f C \n", cel);
-   printf("%.2f K \n", kel);
+     printf("%.0f F \n", shkala);
+     printf("%.2f C \n", cel);
+     printf("%.2f K \n", kel);
    break;
+   
    default:
+   
    kel = shkala+273.15;
    fahr = shkala*1.8+32;
-   printf("%.0f C \n", shkala);
-   printf("%.2f K \n", kel);
-   printf("%.2f F \n\n", fahr);
+     printf("%.0f C \n", shkala);
+     printf("%.2f K \n", kel);
+     printf("%.2f F \n\n", fahr);
    
-    cel = shkala-273.15;
+   cel = shkala-273.15;
    fahr = (shkala-273.15)*1.8+32;
-   printf("%.0f K \n", shkala);
-   printf("%.2f C \n", cel);
-   printf("%.2f F \n\n", fahr);
+     printf("%.0f K \n", shkala);
+     printf("%.2f C \n", cel);
+     printf("%.2f F \n\n", fahr);
    
    cel = (shkala-32)/1.8;
    kel = 273.15+(shkala-32)/1.8;
-   printf("%.0f F \n", shkala);
-   printf("%.2f C \n", cel);
-   printf("%.2f K \n\n", kel);
+     printf("%.0f F \n", shkala);
+     printf("%.2f C \n", cel);
+     printf("%.2f K \n\n", kel);
    break;
    }
+   return 0
 }
